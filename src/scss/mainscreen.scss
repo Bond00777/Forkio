@@ -1,0 +1,132 @@
+.mainscreen 
+{
+    background-image: url('../images/dest/main/main-screen.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    
+    &_tagline 
+    {
+        font-family: Lato-Regular;
+        font-size: 30px;
+        color: #8d81ac;
+        text-align: center;
+        margin-top: 18px;
+    }
+
+    &_title 
+    {
+        font-family: Montserrat-Bold;
+        font-size: 82px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+
+    &_content 
+    {
+        height: 700px;
+        padding: 50px 10px;
+    }
+
+    &_version 
+    {
+        font-family: MR;
+        font-size: 16px;
+        color: #848e97;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 16px;
+    }
+
+    &_bot 
+    {
+        transform: translateY(90%);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+
+        button 
+        {
+            height: 60px;
+            font-family: Montserrat-Bold;
+            font-size: 21px;
+            margin: -30px auto 0;
+            font-size: 21px;
+            padding: 0 60px;
+            border-radius: 30px;
+            background-color: #8d81ac;
+            border: 2px solid transparent;
+            color: #ffffff;
+            &:hover 
+            {
+                color: #8d81ac;
+                background-color: #fff;
+                border: 2px solid #8d81ac;
+            }
+        }
+
+        p 
+        {
+            font-family: MR;
+            font-size: 14px;
+            color: #848e97;
+            margin-top: 19px;
+        }
+    }
+
+    @media (max-width: 992px) 
+    {
+        .mainscreen 
+        {
+            &_title 
+            {
+                font-size: 72px;
+            }
+
+            &_tagline 
+            {
+                font-size: 24px;
+            }
+
+            &_version 
+            {
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) 
+    {
+        .mainscreen 
+        {
+            &_title 
+            {
+                font-size: 48px;
+            }
+
+            &_tagline 
+            {
+                font-size: 18px;
+            }
+
+            &_version 
+            {
+                font-size: 14px;
+            }
+
+            &_bot 
+            {
+                button 
+                {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,296 @@
+.price 
+{
+
+    background-position: center;
+    background-image: url('../images/dest/price/back.png');
+    background-size: cover;
+    
+    &_content 
+        {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 10px 60px; 
+        }
+
+    &_title 
+    {
+        font-family: Montserrat-Bold;
+        font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 50px;
+    }
+
+    .list 
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+        flex-wrap: wrap;
+        margin-left: 40px;
+        margin-right: 40px;
+
+        &_item
+        {
+            width: 257px;
+            height: 457px;
+            font-family: Montserrat-Regular;
+            position: relative;
+            background-color: rgba(#fff, 0.1);
+            color: #ffffff;
+            margin-top: 58px;
+        }
+
+        &_subTitle 
+        {
+            font-size: 24px;
+            text-transform: uppercase;
+            text-align: center;
+            background-color: rgba(#fff, 0.1);
+
+            p 
+            {
+                padding-top: 45px;
+                padding-bottom: 35px;
+            }
+        }
+
+        &_subscribe 
+        {
+            padding: 30px 0 35px;
+
+            .cost
+            {
+                font-family: Montserrat-Bold;
+                font-size: 60px;
+                font-weight: 700;
+                text-align: center;
+                line-height: 1;
+                margin-bottom: 23px;
+                color: #ffffff;
+                p 
+                {
+                   font-family: Montserrat-Regular;
+                   display: inline-block;
+                }
+            }
+        }
+
+        &_term 
+        {
+            color: rgba(#fff, 0.4);
+            font-size: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            &:after {
+                content: '';
+                display: block;
+                margin: 35px auto 0;
+                width: 60px;
+                height: 5px;
+                background-color: #8d81ac;
+              }
+        }
+    
+        &_license 
+        {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        &_button 
+        {
+            background-color: #796b79;
+            text-transform: uppercase;
+            color: #ffffff;
+            bottom: 39px;
+            font-weight: 400;
+            width: 160px;
+            height: 42px;
+            border-radius: 20px;
+            border: none;
+            margin: 0 auto;
+            margin-top: 50px;
+
+            p 
+            {
+                display: block;
+                margin: 0 auto;
+            }
+            
+            &:hover {
+                background-color: #d1ccd1;
+            }
+        }
+    }
+}
+
+.list 
+{
+    .highlight 
+    {
+        width: 298px;
+        height: 560px;
+        background-color: rgba(#000, 0.1);
+        color: #ffffff;
+        font-family: Montserrat-Regular;
+
+        &_subTitle 
+        {
+            font-size: 24px;
+            text-transform: uppercase;
+            text-align: center;
+            background-color: #3a2e3d;
+
+            p 
+            {
+                padding-top: 50px;
+                padding-bottom: 43px;
+            }
+        }
+
+        &_subscribe
+        {
+            padding: 30px 0 35px;
+            padding-bottom: 53px;
+            background-color: rgba(#413344, 0.5);
+            .cost
+            {
+                font-family: Montserrat-Bold;
+                font-size: 82px;
+                font-weight: 700;
+                text-align: center;
+                line-height: 1;
+                margin-bottom: 23px;
+                color: #ffffff;
+                p 
+                {
+                   font-family: Montserrat-Regular;
+                   display: inline-block;
+                }
+            }
+        }
+
+        &_term 
+        {
+            color: rgba(#fff, 0.4);
+            font-size: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            &:after {
+                content: '';
+                display: block;
+                margin: 47px auto 0;
+                width: 60px;
+                height: 5px;
+                background-color: #8d81ac;
+              }
+        }
+
+        &_license 
+        {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        &_button 
+        {
+            background-color: #796b79;
+            text-transform: uppercase;
+            color: #ffffff;
+            bottom: 39px;
+            font-weight: 400;
+            width: 190px;
+            height: 52px;
+            border-radius: 25px;
+            border: none;
+            margin: 0 auto;
+            margin-top: 80px;
+
+            p 
+            {
+                display: block;
+                margin: 0 auto;
+            }
+            
+            &:hover {
+                background-color: #d1ccd1;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) 
+{
+    .price
+    {
+        .list 
+        {
+            width:570px;
+            margin: 0 auto;
+
+            &_item
+            {
+                margin-bottom: 40px;
+            }
+
+            .highlight 
+            {
+                margin-left: -19px;
+
+                &_subscribe 
+                {
+                    padding-bottom: 53px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 660px) 
+{
+    .price
+    {
+        .list 
+        {
+            width:290px;
+            margin: 0 auto;
+            margin-top: 53px;
+
+            &_item
+            {
+                margin-bottom: 14px;
+                margin-top: 0px;
+            }
+
+            .highlight 
+            {
+                margin-bottom: 14px;
+                
+
+                &_subscribe 
+                {
+                    padding-bottom: 53px;
+                }
+            }
+        }
+    } 
+}
+
+@media (max-width: 360px) 
+{
+    .price
+    {
+        .list 
+        {
+            .highlight 
+            { 
+                margin-left: 0px;
+            }
+        }
+    } 
+}
+
+
